@@ -1,0 +1,78 @@
+* Sbse pehle humne init command run krenge isse package.json file banegi:
+
+Command:
+--------
+npm init
+
+<-------------------------------------------------------------------------->
+
+* Fir humne Express ko install kiya:
+
+Command:
+--------
+npm i express
+
+<-------------------------------------------------------------------------->
+
+* Ab hum server.js file banayenge, isme server related configuration krenge:
+
+USER_CRUD ==> new file ==> server.js
+
+Command:
+--------
+node server.js
+
+<-------------------------------------------------------------------------->
+
+* Hume files mai changes krne k baad server ko bar-bar restart na krna pde
+  uske liye hum 'nodemon' library ko install krenge:
+
+Command:
+--------
+npm i nodemon
+
+<-------------------------------------------------------------------------->
+
+* Ab hum lodash library ko install krenge:
+
+Command:
+--------
+npm i lodash
+
+<-------------------------------------------------------------------------->
+
+* Ab hum 'db.js' file banayenge or isme Node.js server or Database server 
+  ke beech connection setup karwayenge:
+
+USER_CRUD ==> new file ==> db.js 
+
+<-------------------------------------------------------------------------->
+
+* Ab hum mongoose ko install krenge, node.js server or database server ke
+  beech connection setup karne ke liye:
+
+Command:
+--------
+=> npm i mongoose
+
+<-------------------------------------------------------------------------->
+
+* Ab hum models folder banayenge or isme 'Person.js' file banayenge:
+
+New Folder => models => new file => Person.js
+
+<-------------------------------------------------------------------------->
+
+* Ab hum 'body-parser' ko apne project mai install krenge:
+
+Command:
+--------
+==> npm i body-parser
+
+<-------------------------------------------------------------------------->
+
+* Adding Git for project Versoning:
+
+Command:
+--------
+==> git init
