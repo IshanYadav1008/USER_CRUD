@@ -1,7 +1,11 @@
 const mongoose = require('mongoose'); 
+require('dotenv').config(); 
 
-// Define the MongoDB connection URL
-const mongoURL = 'mongodb://localhost:27017/user_crud'
+// URL of Local MongoDB Server
+// const mongoURL = process.env.MONGODB_URL_LOCAL
+
+// URL of Remote MongoDB Server (MongoDB Atlas)
+const mongoURL = process.env.MONGODB_URL;
 
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
@@ -15,7 +19,7 @@ db.on('connected', () => {
 })
 
 db.on('error', () => {                           
-    console.log('MongoDB Connection Error', err)
+    console.log('MongoDB Connection Error')
 })
 
 db.on('disconnected', () => {                   

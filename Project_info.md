@@ -76,3 +76,28 @@ Command:
 Command:
 --------
 ==> git init
+
+<-------------------------------------------------------------------------->
+
+* Ab hum apne Database ko Remote Database Server pr HOST krenge,
+  or iske liye hum use krenge MongoDB Atlas ko:
+
+link: https://www.mongodb.com/cloud/atlas/register
+
+<-------------------------------------------------------------------------->
+
+* Now create .env file or jo bhi sensitive information hoti hai use hum
+  es file ke andar rakhte hai or es file ko hum GitHub pr push nahi krte
+  hai.
+
+* Ab hum 'dotenv' ko install krenge:
+------------------------------------
+
+Node Command:
+-------------
+=> npm i dotenv
+
+* Ab hum ek file banayenge jiska naam hoga '.env':
+--------------------------------------------------
+
+=> new file => .env 
