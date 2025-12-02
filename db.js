@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 require('dotenv').config(); 
 
 // URL of Local MongoDB Server
-// const mongoURL = process.env.MONGODB_URL_LOCAL
+const mongoURL = process.env.MONGODB_URL_LOCAL
 
 // URL of Remote MongoDB Server (MongoDB Atlas)
-const mongoURL = process.env.MONGODB_URL;
+// const mongoURL = process.env.MONGODB_URL;
 
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,

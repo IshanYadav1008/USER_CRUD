@@ -101,3 +101,38 @@ Node Command:
 --------------------------------------------------
 
 => new file => .env 
+
+<-------------------------------------------------------------------------->
+
+* Ab hum apne local Node.js server ko Remote pr HOST krenge, or iske liye 
+  hum use krenge 'render' ko: mtlb ab hmari website local par nahi balki
+  remote pr host hogi:
+
+link: https://dashboard.render.com/
+
+<-------------------------------------------------------------------------->
+
+* Applying 'logRequest' Middleware function in server.js file:
+
+  Jab bbhi hum kisi route ko access krenge toh ye middleware run hoga
+  kyuki ise humne sabhi routes k liye accessible bna diya hai by 
+  applying below code:
+
+// Now applying middleware to the all routes.  
+app.use(logRequest);
+
+<-------------------------------------------------------------------------->
+
+* Installing another middleware 'Passport':
+
+Node Command:
+-------------
+=> npm install passport passport-local 
+
+<-------------------------------------------------------------------------->
+
+* Installing 'bcrypt' for converting password in as Hashing form:
+
+command:
+--------
+npm i bcrypt --save
