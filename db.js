@@ -26,4 +26,4 @@ db.on('disconnected', () => {
     console.log('MongoDB Dis-Connected')
 })
 
-module.export = db
+module.exports = db

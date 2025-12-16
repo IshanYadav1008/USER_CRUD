@@ -7,7 +7,6 @@ const db      = require('./db')
 
 const passport = require('./auth');
 app.use(passport.initialize());
-
 const localAuthMiddleware = passport.authenticate('local', { session: false})
 
 const bodyParser = require('body-parser');
@@ -29,7 +28,7 @@ app.get('/', function (req, res) {
 })
 
 const personRoutes = require('./routes/personRoutes');
-app.use('/person', localAuthMiddleware, personRoutes);
+app.use('/person', personRoutes);
 
 const menuRoutes = require('./routes/menuItemRoutes');
 app.use('/menu', menuRoutes);

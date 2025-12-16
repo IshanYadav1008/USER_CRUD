@@ -114,7 +114,7 @@ link: https://dashboard.render.com/
 
 * Applying 'logRequest' Middleware function in server.js file:
 
-  Jab bbhi hum kisi route ko access krenge toh ye middleware run hoga
+  Jab bhi hum kisi route ko access krenge toh ye middleware run hoga
   kyuki ise humne sabhi routes k liye accessible bna diya hai by 
   applying below code:
 
@@ -123,7 +123,8 @@ app.use(logRequest);
 
 <-------------------------------------------------------------------------->
 
-* Installing another middleware 'Passport':
+* Installing another middleware 'Passport' for authentication by using
+  username or password to accessing protected route:
 
 Node Command:
 -------------
@@ -136,3 +137,12 @@ Node Command:
 command:
 --------
 npm i bcrypt --save
+
+<-------------------------------------------------------------------------->
+
+* Installing JWT for Token based Authentication to accessing protected
+  route:
+
+Command:
+--------
+npm install jsonwebtoken
